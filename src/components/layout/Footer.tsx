@@ -35,7 +35,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <a href="mailto:info@muditaretreats.com" className="hover:text-primary transition-colors">info@muditaretreats.com</a>
+                <a href="mailto:info@muditaretreats.com" className="hover:text-primary transition-colors">info@mudita.rest</a>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary" />
