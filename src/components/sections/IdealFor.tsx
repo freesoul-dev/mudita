@@ -7,22 +7,22 @@ const audiences = [
   {
     title: 'Wellness Retreats',
     description: 'A serene environment for meditation, yoga, and healing workshops.',
-    image: { src: 'https://placehold.co/600x400.png', alt: 'Group meditating in a tranquil setting', hint: 'meditation retreat' },
+    image: { src: '/images/AdobeStock_802844941_Preview.jpeg', alt: 'Group meditating in a tranquil setting', hint: 'meditation retreat' },
   },
   {
     title: 'Creative Escapes',
     description: 'Find inspiration in nature for your writing or artistic endeavors.',
-    image: { src: 'https://placehold.co/600x400.png', alt: 'Person writing in a notebook outdoors', hint: 'writing nature' },
+    image: { src: '/images/AdobeStock_1655189212_Preview.jpeg', alt: 'Person writing in a notebook outdoors', hint: 'writing nature' },
   },
   {
     title: 'Intimate Ceremonies',
     description: 'A breathtaking backdrop for small weddings and special celebrations.',
-    image: { src: 'https://placehold.co/600x400.png', alt: 'An intimate wedding ceremony setup', hint: 'wedding ceremony' },
+    image: { src: '/images/AdobeStock_918310449_Preview.jpeg', alt: 'An intimate wedding ceremony setup', hint: 'wedding ceremony' },
   },
   {
     title: 'Family & Friends',
     description: 'Reconnect with loved ones and create lasting memories together.',
-    image: { src: 'https://placehold.co/600x400.png', alt: 'Family enjoying a peaceful vacation', hint: 'family vacation' },
+    image: { src: '/images/AdobeStock_1087700008_Preview.jpeg', alt: 'Family enjoying a peaceful vacation', hint: 'family vacation' },
   },
 ];
 

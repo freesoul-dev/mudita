@@ -14,8 +14,9 @@ const offerings: Offering[] = [
     title: "Accommodations",
     description: "Relax in our well-appointed rooms, complete with all modern amenities for a comfortable and restful stay.",
     images: [
-        { src: "https://placehold.co/1200x800.png", alt: "A beautifully decorated room at Mudita", hint: "luxury room" },
-        { src: "https://placehold.co/1200x800.png", alt: "A second view of the comfortable room", hint: "bedroom interior" },
+        { src: "/images/acc/DSC04003.jpg", alt: "", hint: "" },
+        { src: "/images/acc/DSC04012.jpg", alt: "", hint: "" },
+        { src: "/images/acc/DSC03970.jpg", alt: "", hint: "" }
     ],
     details: "Our accommodations are designed to be your sanctuary. Each room features a plush queen-sized bed, en-suite bathroom, and a private balcony with stunning views. We provide organic cotton linens, locally-made toiletries, and a quiet space for you to unwind and reconnect with yourself."
   },
@@ -25,8 +26,9 @@ const offerings: Offering[] = [
     title: "Restoratives",
     description: "Engage in restorative practices like yoga, meditation, and sound baths to heal your mind, body, and spirit.",
     images: [
-        { src: "https://placehold.co/1200x800.png", alt: "Person meditating peacefully at sunrise", hint: "meditation yoga" },
-        { src: "https://placehold.co/1200x800.png", alt: "A serene yoga session in progress", hint: "yoga retreat" },
+        { src: "/images/rest/spa/DSC04110.jpg", alt: "Person meditating peacefully at sunrise", hint: "meditation yoga" },
+        { src: "/images/rest/spa/DSC04099.jpg", alt: "A serene yoga session in progress", hint: "yoga retreat" },
+        { src: "/images/rest/spa/DSC04091.jpg", alt: "", hint: "" }
     ],
     details: "We offer a variety of restorative practices led by experienced practitioners. Daily yoga and meditation sessions are available for all levels. Immerse yourself in the healing vibrations of a sound bath or join a guided breathwork session to release tension and find inner peace."
   },
@@ -36,8 +38,8 @@ const offerings: Offering[] = [
     title: "Ital Cuisine",
     description: "Savor delicious and nourishing plant-based meals, featuring farm-to-table ingredients from our gardens.",
     images: [
-        { src: "https://placehold.co/1200x800.png", alt: "A vibrant plate of plant-based food", hint: "plant-based food" },
-        { src: "https://placehold.co/1200x800.png", alt: "Fresh vegetables from the garden", hint: "organic vegetables" },
+        { src: "/images/ital/ital.png", alt: "A vibrant plate of plant-based food", hint: "plant-based food" },
+        { src: "/images/ital/DSC03857.jpg", alt: "Fresh vegetables from the garden", hint: "organic vegetables" },
     ],
     details: "Our culinary philosophy is centered around the Ital tradition—fresh, natural, and plant-based. We source most of our ingredients from our own organic gardens and local farmers. Every meal is a celebration of flavor and vitality, lovingly prepared by our in-house chef to nourish your body and delight your senses."
   },
@@ -47,7 +49,7 @@ const offerings: Offering[] = [
     title: "Offsite Experiences + Eco-Tourism",
     description: "Explore the natural beauty of Portland with guided hiking, river rafting, and visits to pristine local beaches.",
     images: [
-        { src: "https://placehold.co/1200x800.png", alt: "A person hiking on a trail with a beautiful view", hint: "hiking trail" },
+        { src: "/images/offsite/IMG_0113.PNG", alt: "A person hiking on a trail with a beautiful view", hint: "hiking trail" },
         { src: "https://placehold.co/1200x800.png", alt: "Rafting down the Rio Grande", hint: "river rafting" },
     ],
     details: "Discover the wonders of Portland, one of Jamaica's most unspoiled parishes. We can arrange guided eco-tours, including bamboo rafting on the Rio Grande, hiking to hidden waterfalls in the Blue Mountains, or simply relaxing on the world-famous Frenchman's Cove beach. Connect with the vibrant spirit of Jamaica."
@@ -58,7 +60,7 @@ const offerings: Offering[] = [
     title: "Cultural Experiences + Ceremonies",
     description: "Participate in authentic local ceremonies and cultural workshops to connect with the heart of Jamaica.",
     images: [
-        { src: "https://placehold.co/1200x800.png", alt: "Local Jamaicans playing music", hint: "jamaican culture" },
+        { src: "/images/DSC04143.jpg", alt: "Local Jamaicans playing music", hint: "jamaican culture" },
         { src: "https://placehold.co/1200x800.png", alt: "A traditional Jamaican ceremony", hint: "cultural ceremony" },
     ],
     details: "Immerse yourself in the rich culture of Jamaica. We offer opportunities to participate in traditional ceremonies, learn from local artisans, and enjoy the sounds of authentic drumming and music. These experiences provide a deep connection to the history and spirit of the island."
@@ -69,8 +71,8 @@ const offerings: Offering[] = [
     title: "Onsite Experiences + Glamping",
     description: "Enjoy our unique glamping setups, nature walks, and stargazing for a memorable eco-tourism adventure.",
     images: [
-        { src: "https://placehold.co/1200x800.png", alt: "A cozy glamping tent under the stars", hint: "glamping tent" },
-        { src: "https://placehold.co/1200x800.png", alt: "A trail winding through the Mudita property", hint: "nature trail" },
+        { src: "/images/onsite/DSC04130.jpg", alt: "A trail winding through the Mudita property", hint: "nature trail" },
+        { src: "/images/onsite/DSC04127.jpg", alt: "A cozy glamping tent under the stars", hint: "glamping tent" },
     ],
     details: "You don't have to leave Mudita to have an adventure. Our unique glamping setups offer a chance to sleep comfortably under the stars. Explore our property's walking trails, find a quiet spot to read in a hammock, or join us for a nighttime stargazing session, far from the city lights."
   },

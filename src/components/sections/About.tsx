@@ -63,7 +63,7 @@ export default function About() {
         </div>
         <div className="mt-16 text-center">
             <Image 
-                src="https://placehold.co/1200x600.png" 
+                src="/images/DSC04113.jpg" 
                 alt="Panoramic view of Mudita's landscape" 
                 width={1200} 
                 height={600} 
