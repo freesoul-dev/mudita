@@ -14,11 +14,12 @@ const offerings: Offering[] = [
     title: "Accommodations",
     description: "Relax in our well-appointed rooms, complete with all modern amenities for a comfortable and restful stay.",
     images: [
+        { src: "/images/acc/cottage.JPG", alt: "", hint: "" },
         { src: "/images/acc/DSC04003.jpg", alt: "", hint: "" },
         { src: "/images/acc/DSC04012.jpg", alt: "", hint: "" },
         { src: "/images/acc/DSC03970.jpg", alt: "", hint: "" }
     ],
-    details: "Our accommodations are designed to be your sanctuary. Each room features a plush queen-sized bed, en-suite bathroom, and a private balcony with stunning views. We provide organic cotton linens, locally-made toiletries, and a quiet space for you to unwind and reconnect with yourself."
+    details: `We offer a full cottage stay equipped with a full kitchen and fridge, bathroom and outdoor shower, queen bed, living room, veranda, roof top deck with hammock.\n\nWe also offer two garden level rooms, both furnished with a queen bed, bathroom + shower, closet, mini-fridge, and microwave. All accommodations are air conditioned, have a TV and access to WiFi.`
   },
   {
     id: 'restoratives',
@@ -30,7 +31,7 @@ const offerings: Offering[] = [
         { src: "/images/rest/spa/DSC04099.jpg", alt: "A serene yoga session in progress", hint: "yoga retreat" },
         { src: "/images/rest/spa/DSC04091.jpg", alt: "", hint: "" }
     ],
-    details: "We offer a variety of restorative practices led by experienced practitioners. Daily yoga and meditation sessions are available for all levels. Immerse yourself in the healing vibrations of a sound bath or join a guided breathwork session to release tension and find inner peace."
+    details: "We offer a variety of restorative practices led by experienced practitioners. Yoga and meditation sessions are available for all levels. Immerse yourself in the healing vibrations of a sound bath or join a guided breathwork session to release tension and find inner peace."
   },
   {
     id: 'ital-cuisine',
@@ -49,10 +50,11 @@ const offerings: Offering[] = [
     title: "Offsite Experiences + Eco-Tourism",
     description: "Explore the natural beauty of Portland with guided hiking, river rafting, and visits to pristine local beaches.",
     images: [
+        { src: "/images/offsite/IMG_5476.jpeg", alt: "A person rafting on the Rio Grande", hint: "rafting" },
         { src: "/images/offsite/IMG_0113.PNG", alt: "A person hiking on a trail with a beautiful view", hint: "hiking trail" },
-        { src: "https://placehold.co/1200x800.png", alt: "Rafting down the Rio Grande", hint: "river rafting" },
+        // { src: "https://placehold.co/1200x800.png", alt: "Rafting down the Rio Grande", hint: "river rafting" },
     ],
-    details: "Discover the wonders of Portland, one of Jamaica's most unspoiled parishes. We can arrange guided eco-tours, including bamboo rafting on the Rio Grande, hiking to hidden waterfalls in the Blue Mountains, or simply relaxing on the world-famous Frenchman's Cove beach. Connect with the vibrant spirit of Jamaica."
+    details: "Discover the wonders of Portland, one of Jamaica's most unspoiled parishes. We can arrange guided eco-tours, including bamboo rafting on the Rio Grande, hiking to hidden waterfalls, community Junkanoo celebrations, or simply relaxing on the beach. "
   },
   {
     id: 'cultural-experiences',
@@ -61,9 +63,9 @@ const offerings: Offering[] = [
     description: "Participate in authentic local ceremonies and cultural workshops to connect with the heart of Jamaica.",
     images: [
         { src: "/images/DSC04143.jpg", alt: "Local Jamaicans playing music", hint: "jamaican culture" },
-        { src: "https://placehold.co/1200x800.png", alt: "A traditional Jamaican ceremony", hint: "cultural ceremony" },
+        // { src: "https://placehold.co/1200x800.png", alt: "A traditional Jamaican ceremony", hint: "cultural ceremony" },
     ],
-    details: "Immerse yourself in the rich culture of Jamaica. We offer opportunities to participate in traditional ceremonies, learn from local artisans, and enjoy the sounds of authentic drumming and music. These experiences provide a deep connection to the history and spirit of the island."
+    details: "Immerse yourself in the rich culture of Jamaica. We offer opportunities to participate in traditional ceremonies, learn from local artisans, and enjoy the sounds of authentic drumming and music of Junkanoo. These experiences provide a deep connection to the history and spirit of the island."
   },
   {
     id: 'onsite-experiences',
@@ -74,7 +76,7 @@ const offerings: Offering[] = [
         { src: "/images/onsite/DSC04130.jpg", alt: "A trail winding through the Mudita property", hint: "nature trail" },
         { src: "/images/onsite/DSC04127.jpg", alt: "A cozy glamping tent under the stars", hint: "glamping tent" },
     ],
-    details: "You don't have to leave Mudita to have an adventure. Our unique glamping setups offer a chance to sleep comfortably under the stars. Explore our property's walking trails, find a quiet spot to read in a hammock, or join us for a nighttime stargazing session, far from the city lights."
+    details: "You don't have to leave Mudita to have an adventure. Our unique glamping setups offer a chance to sleep comfortably under the stars. Explore our property's walking trails, find a quiet spot to read in a hammock, or join us for a nighttime stargazing session, far from the city lights.\n\nWe have 8-10 glamping tents, with sizes accomodating 2, 4, and 6 people. Our tents include single bed(s) on a platform, a table, rugs, solo lamp, and access to a shared bathroom and shower.  "
   },
 ];
 
