@@ -45,8 +45,8 @@ export default function OfferingModal({ offering, isOpen, onClose }: OfferingMod
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 text-white bg-black/30 hover:bg-black/50 border-none" />
-              <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 text-white bg-black/30 hover:bg-black/50 border-none" />
+              <CarouselPrevious />
+              <CarouselNext />
             </Carousel>
           </div>
           <div className="p-6 md:p-8 flex flex-col">
