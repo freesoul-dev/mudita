@@ -32,7 +32,9 @@ export type InquiryState = {
   success: boolean;
 };
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Safely initialize Resend with fallback
+const resendApiKey = process.env.RESEND_API_KEY || 'fallback-key';
+const resend = new Resend(resendApiKey);
 
 // Check if Resend API key is configured
 console.log("RESEND_API_KEY status:", process.env.RESEND_API_KEY ? "Set" : "Not set");

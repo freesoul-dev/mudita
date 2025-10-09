@@ -6,12 +6,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Mudita Rest & Wellness | Your Sanctuary in Nature's Embrace",
-  description:
-    "A private retreat and wellness center in Portland, Jamaica for rest, retreat, refuge, healing and wellness.",
+  description: "A private retreat and wellness center in Portland, Jamaica for rest, retreat, refuge, healing and wellness.",
   icons: {
     icon: "/favicon.ico",
   },
-
 };
 
 export default function RootLayout({
