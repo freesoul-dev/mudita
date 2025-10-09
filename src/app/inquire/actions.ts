@@ -34,6 +34,14 @@ export type InquiryState = {
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+// Check if Resend API key is configured
+console.log("RESEND_API_KEY status:", process.env.RESEND_API_KEY ? "Set" : "Not set");
+console.log("RESEND_API_KEY value:", process.env.RESEND_API_KEY ? process.env.RESEND_API_KEY.substring(0, 10) + "..." : "undefined");
+
+if (!process.env.RESEND_API_KEY || process.env.RESEND_API_KEY === 're_your_api_key_here') {
+  console.error("RESEND_API_KEY is not configured. Please set up your Resend API key in .env.local");
+}
+
 export async function submitInquiry(
   prevState: InquiryState,
   formData: FormData
@@ -73,6 +81,14 @@ export async function submitInquiry(
 
   try {
     const { fullName, email, phone, desiredDates, guests, visitType, interests, howDidYouHear, dietary } = validatedFields.data;
+
+    // Check if Resend is properly configured
+    if (!process.env.RESEND_API_KEY || process.env.RESEND_API_KEY === 're_your_api_key_here') {
+      return {
+        message: "Email service is not configured. Please contact us directly at info@mudita.rest",
+        success: false,
+      };
+    }
 
     await resend.emails.send({
       from: 'Mudita Inquiry Form <noreply@mudita.rest>',
@@ -136,6 +152,15 @@ export async function submitInquiry(
     };
   } catch (error) {
     console.error("Inquiry submission error:", error);
+    
+    // Check if it's a Resend API error
+    if (error instanceof Error && error.message.includes('API key')) {
+      return {
+        message: "Email service configuration error. Please contact us directly at info@mudita.rest",
+        success: false,
+      };
+    }
+    
     return {
       message: "An unexpected error occurred. Please try again later.",
       success: false,
