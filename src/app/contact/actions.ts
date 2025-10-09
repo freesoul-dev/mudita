@@ -19,17 +19,6 @@ export type ContactState = {
   success: boolean;
 };
 
-// Safely initialize Resend with fallback
-const resendApiKey = process.env.RESEND_API_KEY || 'fallback-key';
-const resend = new Resend(resendApiKey);
-
-// Check if Resend API key is configured
-console.log("RESEND_API_KEY status:", process.env.RESEND_API_KEY ? "Set" : "Not set");
-console.log("RESEND_API_KEY value:", process.env.RESEND_API_KEY ? process.env.RESEND_API_KEY.substring(0, 10) + "..." : "undefined");
-
-if (!process.env.RESEND_API_KEY || process.env.RESEND_API_KEY === 're_your_api_key_here') {
-  console.error("RESEND_API_KEY is not configured. Please set up your Resend API key in .env.local");
-}
 
 export async function submitContactForm(
   prevState: ContactState,
@@ -61,6 +50,9 @@ export async function submitContactForm(
         success: false,
       };
     }
+
+    // Initialize Resend only when needed
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     await resend.emails.send({
       from: "Mudita Contact Form <noreply@mudita.rest>",
