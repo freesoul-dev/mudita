@@ -10,9 +10,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <Image src="/logo.png" alt="Mudita logo" width={50} height={50} />
+              <Image src="/mudita_logo_w_text.png" alt="Mudita logo" width={100} height={100} />
               <span className="font-headline text-2xl font-bold text-foreground">
-                Mudita
+                {/* Mudita */}
               </span>
             </Link>
             <p className="text-sm">

@@ -45,7 +45,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="flex items-center gap-2" onClick={() => setIsOpen(false)}>
-            <Image src="/logo.png" alt="Mudita logo" width={50} height={50} />
+            <Image src="/logo.png" alt="Mudita logo" width={85} height={85} />
             <span className={cn("font-headline text-2xl font-bold", isScrolledOrDarkPage ? "text-foreground" : "text-white drop-shadow-md")}>
               Mudita
             </span>
